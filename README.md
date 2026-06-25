@@ -11,8 +11,8 @@ Cognizant Digital Nurture 5.0 is a 7-week Deep Skilling program as part of the C
 - Java
 - SQL / PL-SQL
 - JUnit 5 & Mockito
-- Spring Core & Spring Framework
-- Spring Boot
+- Spring Core, Spring Boot & Spring Data JPA
+- Hibernate / H2 Database
 - React
 - Git & GitHub
 
@@ -93,6 +93,28 @@ DN5-JavaFSE-React-Solutions/
 
 │   ├── Module6-SpringJPA/
 
+│   │   ├── pom.xml
+
+│   │   ├── README.md
+
+│   │   └── src/main/
+
+│   │       ├── java/com/cognizant/ormlearn/
+
+│   │       │   ├── OrmLearnApplication.java
+
+│   │       │   ├── model/Country.java
+
+│   │       │   ├── repository/CountryRepository.java
+
+│   │       │   └── service/CountryService.java
+
+│   │       └── resources/
+
+│   │           ├── application.properties
+
+│   │           └── data.sql
+
 │   └── Module7-SpringREST/
 
 │
@@ -122,7 +144,7 @@ DN5-JavaFSE-React-Solutions/
 | Week 2 | PL/SQL Programming | ✅ Completed |
 | Week 2 | TDD (JUnit & Mockito) | ✅ Completed |
 | Week 3 | Spring Core & Maven | ✅ Completed |
-| Week 4 | Spring Data JPA & Hibernate | ⬜ Pending |
+| Week 4 | Spring Data JPA & Hibernate | ✅ Completed |
 | Week 4 | Spring REST (Spring Boot 3) | ⬜ Pending |
 | Week 5 | Microservices | ⬜ Pending |
 | Week 6 | React | ⬜ Pending |
@@ -146,6 +168,12 @@ mvn test
 ```bash
 cd Week3/Module5-SpringCore
 mvn compile exec:java -Dexec.mainClass="com.library.LibraryManagementApplication"
+```
+
+**Spring Data JPA (Week 4 - Module 6):**
+```bash
+cd Week4/Module6-SpringJPA
+mvn spring-boot:run
 ```
 
 ## Author
