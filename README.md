@@ -11,6 +11,7 @@ Cognizant Digital Nurture 5.0 is a 7-week Deep Skilling program as part of the C
 - Java
 - SQL / PL-SQL
 - JUnit 5 & Mockito
+- Spring Core & Spring Framework
 - Spring Boot
 - React
 - Git & GitHub
@@ -70,6 +71,22 @@ DN5-JavaFSE-React-Solutions/
 
 │   └── Module5-SpringCore/
 
+│       ├── pom.xml
+
+│       ├── README.md
+
+│       └── src/main/
+
+│           ├── java/com/library/
+
+│           │   ├── LibraryManagementApplication.java
+
+│           │   ├── service/BookService.java
+
+│           │   └── repository/BookRepository.java
+
+│           └── resources/applicationContext.xml
+
 │
 
 ├── Week4/
@@ -104,7 +121,7 @@ DN5-JavaFSE-React-Solutions/
 | Week 1 | Data Structures & Algorithms | ✅ Completed |
 | Week 2 | PL/SQL Programming | ✅ Completed |
 | Week 2 | TDD (JUnit & Mockito) | ✅ Completed |
-| Week 3 | Spring Core & Maven | ⬜ Pending |
+| Week 3 | Spring Core & Maven | ✅ Completed |
 | Week 4 | Spring Data JPA & Hibernate | ⬜ Pending |
 | Week 4 | Spring REST (Spring Boot 3) | ⬜ Pending |
 | Week 5 | Microservices | ⬜ Pending |
@@ -123,6 +140,12 @@ Run the `.sql` files in MySQL / phpMyAdmin against a database named `BankDB`.
 ```bash
 cd Week2/Module4-TDD
 mvn test
+```
+
+**Spring Core (Week 3 - Module 5):**
+```bash
+cd Week3/Module5-SpringCore
+mvn compile exec:java -Dexec.mainClass="com.library.LibraryManagementApplication"
 ```
 
 ## Author
