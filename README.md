@@ -10,6 +10,7 @@ Cognizant Digital Nurture 5.0 is a 7-week Deep Skilling program as part of the C
 
 - Java
 - SQL / PL-SQL
+- JUnit 5 & Mockito
 - Spring Boot
 - React
 - Git & GitHub
@@ -39,7 +40,29 @@ DN5-JavaFSE-React-Solutions/
 
 │   ├── Module3-PLSQL/
 
+│   │   ├── Exercise1_ControlStructures.sql
+
+│   │   └── Exercise3_StoredProcedures.sql
+
 │   └── Module4-TDD/
+
+│       ├── pom.xml
+
+│       └── src/
+
+│           ├── main/java/com/dn5/
+
+│           │   ├── Calculator.java
+
+│           │   ├── ExternalApi.java
+
+│           │   └── MyService.java
+
+│           └── test/java/com/dn5/
+
+│               ├── CalculatorTest.java
+
+│               └── MyServiceTest.java
 
 │
 
@@ -79,14 +102,28 @@ DN5-JavaFSE-React-Solutions/
 |------|--------|--------|
 | Week 1 | Design Patterns & Principles | ✅ Completed |
 | Week 1 | Data Structures & Algorithms | ✅ Completed |
-| Week 2 | PL/SQL Programming | 🔄 In Progress |
-| Week 2 | TDD (JUnit, Mockito, SLF4J) | ⬜ Pending |
+| Week 2 | PL/SQL Programming | ✅ Completed |
+| Week 2 | TDD (JUnit & Mockito) | ✅ Completed |
 | Week 3 | Spring Core & Maven | ⬜ Pending |
 | Week 4 | Spring Data JPA & Hibernate | ⬜ Pending |
 | Week 4 | Spring REST (Spring Boot 3) | ⬜ Pending |
 | Week 5 | Microservices | ⬜ Pending |
 | Week 6 | React | ⬜ Pending |
 | Week 7 | Debugging, Git, DevOps, Cloud, GenAI | ⬜ Pending |
+
+## How to Run
+
+**Java files (Week 1):**
+Compile and run directly with `javac` and `java`, or open in any IDE.
+
+**PL/SQL (Week 2 - Module 3):**
+Run the `.sql` files in MySQL / phpMyAdmin against a database named `BankDB`.
+
+**JUnit/Mockito (Week 2 - Module 4):**
+```bash
+cd Week2/Module4-TDD
+mvn test
+```
 
 ## Author
 
