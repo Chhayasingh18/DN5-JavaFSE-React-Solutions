@@ -17,87 +17,6 @@ Cognizant Digital Nurture 5.0 is a 7-week Deep Skilling program as part of the C
 - React
 - Git & GitHub
 
-## Repository Structure
-DN5-JavaFSE-React-Solutions/
-│
-├── Week1/
-│   ├── Module1-DesignPatterns/
-│   │   ├── SingletonPatternExample.java
-│   │   └── FactoryMethodPatternExample.java
-│   ├── Module2-DSA/
-│   │   ├── EcommerceSearch.java
-│   │   └── FinancialForecasting.java
-│   ├── Module3-PLSQL/
-│   │   ├── Exercise1_ControlStructures.sql
-│   │   └── Exercise3_StoredProcedures.sql
-│   └── Module4-TDD/
-│       ├── pom.xml
-│       └── src/
-│           ├── main/java/com/dn5/
-│           │   ├── Calculator.java
-│           │   ├── ExternalApi.java
-│           │   └── MyService.java
-│           └── test/java/com/dn5/
-│               ├── CalculatorTest.java
-│               └── MyServiceTest.java
-│
-├── Week2/
-│   ├── Module5-SpringCore/
-│   │   ├── pom.xml
-│   │   ├── README.md
-│   │   └── src/main/
-│   │       ├── java/com/library/
-│   │       │   ├── LibraryManagementApplication.java
-│   │       │   ├── service/BookService.java
-│   │       │   └── repository/BookRepository.java
-│   │       └── resources/applicationContext.xml
-│   └── Module6-SpringJPA/
-│       ├── pom.xml
-│       ├── README.md
-│       └── src/main/
-│           ├── java/com/cognizant/ormlearn/
-│           │   ├── OrmLearnApplication.java
-│           │   ├── model/Country.java
-│           │   ├── repository/CountryRepository.java
-│           │   └── service/CountryService.java
-│           └── resources/
-│               ├── application.properties
-│               └── data.sql
-│
-├── Week3/
-│   └── Module7-SpringREST/
-│       ├── pom.xml
-│       └── src/main/
-│           ├── java/com/cognizant/springlearn/
-│           │   ├── SpringLearnApplication.java
-│           │   ├── controller/
-│           │   │   ├── HelloController.java
-│           │   │   ├── CountryController.java
-│           │   │   └── AuthenticationController.java
-│           │   ├── service/CountryService.java
-│           │   ├── model/Country.java
-│           │   ├── exception/CountryNotFoundException.java
-│           │   └── security/
-│           │       ├── SecurityConfig.java
-│           │       └── JwtAuthorizationFilter.java
-│           └── resources/
-│               ├── application.properties
-│               └── country.xml
-│
-├── Week4/
-│   ├── Module8-SonarQube/
-│   └── Module9-Microservices/
-│
-├── Week5/
-│   └── Module10-React/
-│
-├── Week6/
-│   ├── Module10-React/
-│   └── Module11-Git-CICD/
-│
-└── Week7/
-└── Module12-DevOps-Docker-Cloud-GenAI/
-
 ## Progress Tracker
 
 | CTS Week | Module | Topics | Status |
@@ -115,37 +34,58 @@ DN5-JavaFSE-React-Solutions/
 | Week 6 | Module 10 | React (continued) + GIT & CI/CD | ⬜ Pending |
 | Week 7 | Module 12 | DevOps, Docker, Cloud & GenAI | ⬜ Pending |
 
+## Repository Structure
+
+**Week 1**
+- Module1-DesignPatterns → SingletonPatternExample.java, FactoryMethodPatternExample.java
+- Module2-DSA → EcommerceSearch.java, FinancialForecasting.java
+- Module3-PLSQL → Exercise1_ControlStructures.sql, Exercise3_StoredProcedures.sql
+- Module4-TDD → pom.xml, src/main/java/com/dn5 (Calculator, ExternalApi, MyService), src/test/java/com/dn5 (CalculatorTest, MyServiceTest)
+
+**Week 2**
+- Module5-SpringCore → pom.xml, src/main/java/com/library (LibraryManagementApplication, BookService, BookRepository), src/main/resources/applicationContext.xml
+- Module6-SpringJPA → pom.xml, src/main/java/com/cognizant/ormlearn (OrmLearnApplication, Country, CountryRepository, CountryService), src/main/resources (application.properties, data.sql)
+
+**Week 3**
+- Module7-SpringREST → pom.xml, src/main/java/com/cognizant/springlearn (SpringLearnApplication, HelloController, CountryController, AuthenticationController, CountryService, Country, CountryNotFoundException, SecurityConfig, JwtAuthorizationFilter), src/main/resources (application.properties, country.xml)
+
+**Week 4**
+- Module8-SonarQube → Pending
+- Module9-Microservices → Pending
+
+**Week 5**
+- Module10-React → Pending
+
+**Week 6**
+- Module10-React (continued), Module11-Git-CICD → Pending
+
+**Week 7**
+- Module12-DevOps-Docker-Cloud-GenAI → Pending
+
 ## How to Run
 
-**Java files (Week 1 - Module 1 & 2):**
-Compile and run directly with `javac` and `java`, or open in any IDE.
-
-**PL/SQL (Week 1 - Module 3):**
-Run `.sql` files in MySQL / phpMyAdmin against a database named `BankDB`.
-
-**JUnit/Mockito (Week 1 - Module 4):**
+**Week 1 - Module 4 (JUnit/Mockito):**
 ```bash
 cd Week1/Module4-TDD
 mvn test
 ```
 
-**Spring Core (Week 2 - Module 5):**
+**Week 2 - Module 5 (Spring Core):**
 ```bash
 cd Week2/Module5-SpringCore
 mvn compile exec:java -Dexec.mainClass="com.library.LibraryManagementApplication"
 ```
 
-**Spring Data JPA (Week 2 - Module 6):**
+**Week 2 - Module 6 (Spring Data JPA):**
 ```bash
 cd Week2/Module6-SpringJPA
 mvn spring-boot:run
 ```
 
-**Spring REST + JWT (Week 3 - Module 7):**
+**Week 3 - Module 7 (Spring REST + JWT):**
 ```bash
 cd Week3/Module7-SpringREST
 mvn spring-boot:run
-# Test endpoints:
 # curl -s -u user:pwd http://localhost:8083/hello
 # curl -s -u user:pwd http://localhost:8083/countries
 # curl -s -u user:pwd http://localhost:8083/authenticate
