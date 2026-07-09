@@ -91,10 +91,6 @@ mvn spring-boot:run
 # curl -s -u user:pwd http://localhost:8083/authenticate
 ```
 
-## Verification Schedule
-
-CTS progress verification every **Friday (10am-12pm or 2-3pm)** and **Saturday (10am-1pm)** with Rakesh sir / Dharmendar ji at VIT Bhopal.
-
 ## Author
 
 **Chhaya Singh**
