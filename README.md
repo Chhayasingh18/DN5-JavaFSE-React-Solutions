@@ -28,10 +28,11 @@ Solutions repo for Cognizant Digital Nurture 5.0 Deep Skilling program (Java FSE
 ---
 
 ## Folder Structure
-Week1 → Design Patterns (Singleton, Factory) + DSA
-Week2 → PL/SQL programming + JUnit/Mockito testing
-Week3 → Spring Core + Spring Data JPA with Hibernate
-Week4 → Spring REST (JWT auth) + SonarQube + Microservices
+
+- **Week1** → Design Patterns (Singleton, Factory) + DSA
+- **Week2** → PL/SQL programming + JUnit/Mockito testing
+- **Week3** → Spring Core + Spring Data JPA with Hibernate
+- **Week4** → Spring REST (JWT auth) + SonarQube + Microservices
 
 ---
 
