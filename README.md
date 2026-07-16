@@ -21,7 +21,8 @@ Solutions repo for Cognizant Digital Nurture 5.0 Deep Skilling program (Java FSE
 | 4 | Module 7 | Spring REST (JWT auth) | ✅ |
 | 4 | Module 8 | SonarQube (Code Quality) | ✅ |
 | 4 | Module 9 | Microservices (Eureka + Gateway) | ✅ |
-| 5 | Module 9 | React | ⏳ |
+| 5 | Module 9 | React (Exercises 1-5) | ✅ |
+| 6 | Module 9 | React (Exercises 9-13) | ⏳ |
 | 6 | Module 9/11 | React + Git/CI-CD | ⏳ |
 | 7 | Module 12-16 | DevOps, Docker, Cloud, GenAI | ⏳ |
 
